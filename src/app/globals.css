@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-gold: #d4af37;
+  --color-gold-dark: #b8860b;
+  --color-gold-light: #f4e4c1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}

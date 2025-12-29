@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" fill="none">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fundo preto -->
+  <rect width="600" height="200" fill="#000000"/>
+  
+  <!-- Ícone: Rosto feminino estilizado + elementos estéticos -->
+  <g transform="translate(60, 100)" filter="url(#glow)">
+    <!-- Rosto circular -->
+    <circle cx="0" cy="0" r="45" stroke="url(#goldGradient)" stroke-width="3" fill="none"/>
+    
+    <!-- Contorno facial suave -->
+    <path d="M -25 -15 Q -25 -25, -15 -30 Q 0 -35, 15 -30 Q 25 -25, 25 -15" 
+          stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+    
+    <!-- Olhos elegantes -->
+    <ellipse cx="-12" cy="-8" rx="3" ry="4" fill="url(#goldGradient)"/>
+    <ellipse cx="12" cy="-8" rx="3" ry="4" fill="url(#goldGradient)"/>
+    
+    <!-- Nariz minimalista -->
+    <path d="M 0 -5 L 0 5" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Lábios suaves -->
+    <path d="M -8 12 Q 0 15, 8 12" stroke="url(#goldGradient)" stroke-width="2" 
+          fill="none" stroke-linecap="round"/>
+    
+    <!-- Estrela de brilho (resultado estético) - superior direito -->
+    <g transform="translate(30, -30)">
+      <path d="M 0 -8 L 2 -2 L 8 0 L 2 2 L 0 8 L -2 2 L -8 0 L -2 -2 Z" 
+            fill="url(#goldGradient)" opacity="0.9"/>
+    </g>
+    
+    <!-- Pequena estrela adicional -->
+    <g transform="translate(-32, -25)">
+      <path d="M 0 -5 L 1 -1 L 5 0 L 1 1 L 0 5 L -1 1 L -5 0 L -1 -1 Z" 
+            fill="url(#goldGradient)" opacity="0.7"/>
+    </g>
+    
+    <!-- Seringa estilizada (lado esquerdo) -->
+    <g transform="translate(-50, 10)">
+      <rect x="0" y="0" width="3" height="15" fill="url(#goldGradient)" rx="1"/>
+      <circle cx="1.5" cy="-3" r="4" stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+      <line x1="1.5" y1="15" x2="1.5" y2="20" stroke="url(#goldGradient)" stroke-width="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Linha vertical separadora -->
+  <line x1="160" y1="50" x2="160" y2="150" stroke="url(#goldGradient)" stroke-width="2"/>
+  
+  <!-- Texto: ESTETA VISION -->
+  <g transform="translate(190, 100)">
+    <!-- ESTETA (maior, bold) -->
+    <text x="0" y="-10" font-family="'Montserrat', 'Arial', sans-serif" 
+          font-size="42" font-weight="700" fill="url(#goldGradient)" 
+          letter-spacing="2">ESTETA</text>
+    
+    <!-- VISION (menor, regular) -->
+    <text x="0" y="25" font-family="'Montserrat', 'Arial', sans-serif" 
+          font-size="28" font-weight="400" fill="url(#goldGradient)" 
+          letter-spacing="6">VISION</text>
+  </g>
+  
+  <!-- Detalhes decorativos sutis -->
+  <circle cx="550" cy="50" r="2" fill="url(#goldGradient)" opacity="0.6"/>
+  <circle cx="560" cy="150" r="2" fill="url(#goldGradient)" opacity="0.6"/>
+</svg>
